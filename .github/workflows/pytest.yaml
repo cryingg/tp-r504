@@ -7,5 +7,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Set up Python for Demo
         run: pip3 install pytest
+      - name: Set up Python for Demo1
+        uses: actions/setup-python@v
       - name: Run tests
         run: pytest tp-r504/test.py
