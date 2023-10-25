@@ -1,0 +1,5 @@
+FROM ubuntu
+LABEL maintainer="matteoblanchard76410@gmail.com"
+LABEL version="1.0"
+RUN apt -y update upgrade
+RUN apt -y install build-essential pkg-config python-dev python3-pip default-libmysqlclient-dev
